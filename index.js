@@ -6,3 +6,9 @@ function action() {
   var a=new Audio("sounds/"+x+".mp3");
   a.play();
 }
+document.addEventListener("keydown", event => {
+  var x=String.fromCharCode(event.keyCode);
+  x=x.toLowerCase();
+  var a=new Audio("sounds/"+x+".mp3");
+  a.play();
+});
